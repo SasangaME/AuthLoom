@@ -1,0 +1,6 @@
+@AuthLoom.API_HostAddress = http://localhost:5117
+
+GET {{AuthLoom.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
