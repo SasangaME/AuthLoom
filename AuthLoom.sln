@@ -5,6 +5,13 @@ VisualStudioVersion = 17.10.34607.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthLoom.API", "AuthLoom.API\AuthLoom.API.csproj", "{05EFA5CE-1374-435D-991D-4D2D4EE0FABB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthLoom", "AuthLoom\AuthLoom.csproj", "{02A8912B-5999-4303-B2C9-02C9733897A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DB558162-9EDA-477E-8318-B8B83796D9D1}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{05EFA5CE-1374-435D-991D-4D2D4EE0FABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05EFA5CE-1374-435D-991D-4D2D4EE0FABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05EFA5CE-1374-435D-991D-4D2D4EE0FABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A8912B-5999-4303-B2C9-02C9733897A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A8912B-5999-4303-B2C9-02C9733897A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A8912B-5999-4303-B2C9-02C9733897A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A8912B-5999-4303-B2C9-02C9733897A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
