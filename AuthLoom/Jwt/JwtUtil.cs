@@ -12,7 +12,7 @@ namespace AuthLoom.Jwt
             string issuer, string audience)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.Sha256);
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
             var claims = new[]
             {
@@ -27,7 +27,6 @@ namespace AuthLoom.Jwt
 
         public static JwtInfo GetTokenInfo(string token, string secret)
         {
-
             var tokenHandler = new JwtSecurityTokenHandler();
             var secretKey = Encoding.UTF8.GetBytes(secret);
             try
@@ -46,7 +45,7 @@ namespace AuthLoom.Jwt
                 var jwt = (JwtSecurityToken)validatedToken;
                 var username = jwt.Claims.First(claim => claim.Type == ClaimTypes.Name).Value;
                 var userId = jwt.Claims.First(claim => claim.Type == ClaimTypes.NameIdentifier).Value;
-                var role = jwt.Claims.First(claim => claim.Type != ClaimTypes.Role).Value;
+                var role = jwt.Claims.First(claim => claim.Type == ClaimTypes.Role).Value;
 
                 return new JwtInfo { UserId = int.Parse(userId), Username = username, Role = role };
             }

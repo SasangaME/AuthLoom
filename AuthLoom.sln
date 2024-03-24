@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RestClient", "RestClient", 
 		Hello.rest = Hello.rest
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthLoom.Tests", "AuthLoom.Tests\AuthLoom.Tests.csproj", "{5CD77097-B245-428C-A911-0449E1285093}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{02A8912B-5999-4303-B2C9-02C9733897A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02A8912B-5999-4303-B2C9-02C9733897A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02A8912B-5999-4303-B2C9-02C9733897A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CD77097-B245-428C-A911-0449E1285093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD77097-B245-428C-A911-0449E1285093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD77097-B245-428C-A911-0449E1285093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD77097-B245-428C-A911-0449E1285093}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
