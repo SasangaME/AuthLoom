@@ -7,6 +7,8 @@
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageId>AuthLoom</PackageId>
     <Title>AuthLoom</Title>
+    <Version />
+    <Authors>Sasanga Edirisinghe</Authors>
   </PropertyGroup>
 
   <ItemGroup>
