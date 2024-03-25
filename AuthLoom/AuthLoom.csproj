@@ -7,15 +7,17 @@
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageId>AuthLoom</PackageId>
     <Title>AuthLoom</Title>
+    <Version />
+    <Authors>Sasanga Edirisinghe</Authors>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Middleware\" />
     <Folder Include="Utils\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.1" />
   </ItemGroup>
 
 </Project>
