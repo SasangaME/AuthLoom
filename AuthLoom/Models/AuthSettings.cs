@@ -2,7 +2,7 @@
 {
     public class AuthSettings
     {
-        public string BaseUrl { get; set; } = string.Empty;
+        public string PathPrefix { get; set; } = string.Empty;
         public bool SuperAdminEnabled { get; set; }
         public List<Endpoint> Endpoints { get; set; } = new List<Endpoint>();
         public Jwt Jwt { get; set; } = new();

@@ -1,3 +1,3 @@
 <h1>AuthLoom</h1>
 
-<p>AuthLoom is an open-source library for JWT authorization based on configuration.
+<p>AuthLoom is a library for JWT authorization based on configuration.</p>

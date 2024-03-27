@@ -1,6 +1,5 @@
 ﻿using AuthLoom.Jwt;
 using AuthLoom.Models;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using System.Net;
@@ -35,7 +34,7 @@ namespace AuthLoom.Middleware
 
         private bool Authorize(HttpContext context, JwtInfo jwtInfo, AuthSettings authSettings)
         {
-            var path = GetPath(context, authSettings.BaseUrl);
+            var path = GetPath(context, authSettings.PathPrefix);
             var roles = GetRolesFromConfig(path, authSettings);
             return roles.Exists(role => role == jwtInfo.Role);
         }
@@ -56,10 +55,10 @@ namespace AuthLoom.Middleware
             await context.Response.WriteAsync(response);
         }
 
-        private string GetPath(HttpContext context, string baseUrl)
+        private string GetPath(HttpContext context, string pathPrefix)
         {
             var path = context.Request.Path.ToString();
-            return path.Replace("/api/", "");
+            return path.Replace(pathPrefix, "");
         }
 
         private List<string> GetRolesFromConfig(string path, AuthSettings authSettings)
